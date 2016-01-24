@@ -1,5 +1,12 @@
 # java-rmi-airports
 
+Three simple programs consisting of an AirportServer, PlaceServer, and Client.
+The client connects to the PlaceServer, gives it a city and state, then the
+PlaceServer returns a lat&lon coordinate. The client then gives the coordinate
+to the AirportServer which returns a list of nearby airports.
+
+Written in Java, using RMI.
+
 Compilation & Usage
 To compile, first make sure you have Google Protcol Buffers in your CLASSPATH,
 then use javac on the various java files:
